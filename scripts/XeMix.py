@@ -86,19 +86,20 @@ t2=time.time()
 print("Time elapsed:" +str(t2-t1))
 
 
-df = pd.DataFrame( {"E" : EFields,"P" : pressure,
-                    "percentage",gas_percentage, 
-                    "Additive":  Additive, 
-                    "vd": DriftVels,
-                    "vd_err": DriftVels_err,
-                    "DT" : np.array(DTs),
-                    "DTerr" : np.array(DTs_err), 
-                    "DL" : np.array(DLs), 
-                    "DLerr" : np.array(DLs_err) ,
-                    "DT1" : np.array(DT1s)/1000, 
-                    "DT1err" : np.array(DT1s_err)/1000, 
-                    "DL1" : np.array(DL1s)/1000, 
-                    "DL1err" : np.array(DL1s_err)/1000})
+df = pd.DataFrame( {"E"         : EFields,
+                    "P"         : pressure,
+                    "percentage": gas_percentage, 
+                    "Additive"  : Additive, 
+                    "vd"        : DriftVels,
+                    "vd_err"    : DriftVels_err,
+                    "DT"        : np.array(DTs),
+                    "DTerr"     : np.array(DTs_err), 
+                    "DL"        : np.array(DLs), 
+                    "DLerr"     : np.array(DLs_err) ,
+                    "DT1"       : np.array(DT1s)/1000, 
+                    "DT1err"    : np.array(DT1s_err)/1000, 
+                    "DL1"       : np.array(DL1s)/1000, 
+                    "DL1err"    : np.array(DL1s_err)/1000})
 
 print(df)
 
