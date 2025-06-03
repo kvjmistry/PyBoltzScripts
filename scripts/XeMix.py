@@ -53,7 +53,7 @@ DL1s_err=[]
 
 
 # Run for each E field
-EFields = np.arange(20,140,10)
+EFields=np.arange(10,100,10)
 EFields = EFields*pressure
 EFields = EFields[EFields < 2500]
 print("Running with fields:", EFields)
