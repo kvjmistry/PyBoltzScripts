@@ -15,7 +15,7 @@ PBRun=PyBoltzRun()
 
 pressure = int(sys.argv[1])
 gas_percentage = float(sys.argv[2])
-Additive = string(sys.argv[3])
+Additive = sys.argv[3]
 print("Using Gas Pressure: ", pressure)
 print("Using CO2 Percentage: ", gas_percentage)
 print("Using Gas Percentage: ", Additive)
